@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [image7]: ./test_img/image4.png "Traffic Sign 4"
 [image8]: ./test_img/image5.png "Traffic Sign 5"
 
-Here is a link to my [project code]()
+Here is a link to my [project code on GitHub](https://github.com/vyaspartm/Traffic-Sign-Classifier/blob/master/Traffic-Sign-Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -32,9 +32,9 @@ Here is a link to my [project code]()
 
 I used the pandas library to calculate summary statistics of the traffic signs data set:
 
-* The size of training set is 27839
-* The size of the validation set is 4410
-* The size of test set is 12630
+* The number of training examples: 34799
+* The number of validation examples: 4410
+* The number of testing examples: 12630
 * The shape of a traffic sign image is 32*32*3
 * The number of unique classes/labels in the data set is 43
 
@@ -42,11 +42,11 @@ I used the pandas library to calculate summary statistics of the traffic signs d
 
 Here is an exploratory visualization of the data set. It is a bar chart showing count for each traffic sign.
 
-![alt text][visualization]
+![alt text][dataset_visualization]
 
 Below are the samples images from training data set for each class:
 
-![alt text][training_samples]
+![alt text][training_images]
 
 ### Design and Test a Model Architecture
 
@@ -58,7 +58,7 @@ I normalized the image data so that the data has mean zero and equal variance.
 
 #### 2. Final model architecture
 
-My final model consisted of the following layers:
+The final model consists of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -90,18 +90,18 @@ To train the model, I used following parameters:
 
 #### 4. Approach
 
-I choose two convolutional layers and two hidden fully connected neural network layers for better accuracy.
-I have used convolutional kernel filters of size 5*5 for better accuracy.
-I used AdamOptimizer instead of GradientDescent optimizer. The downside is it takes more computation time for training.
+I choose two convolutional layers and two hidden fully connected neural network layers for optimized accuracy.
+I have used convolutional kernel filters of size 5*5 .
+I used AdamOptimizer instead of GradientDescent optimizer. The downside is it takes more computation time for training but I believe it to be better in terms of accuracy.
 I have used dropout technique to minimize over-fitting problem and thus improve the accuracy. The value of keep_probability I have used is 0.90.
 
 Number of EPOCHs required for training: I am storing last three values of validation accuracy value and for each iteration, I am comparing new validation accuracy with the average of last three stored values. If new values is less than the average of last three consecutively two times, I am stopping the learning process to avoid over-fitting.
 
 My final model results were:
 
-* training set accuracy of 0.987
-* validation set accuracy of 0.969
-* test set accuracy of 0.890
+* training set accuracy of 0.991
+* validation set accuracy of 0.964
+* test set accuracy of 0.897
 
 
 ### Test a Model on New Images
@@ -149,18 +149,18 @@ The model was able to correctly guess 3 of the 5 traffic signs, which gives an a
 #### 3. softmax probabilities for each image along with the sign type of each probability:
 
 image1.png:
-Speed limit (30km/h): 99.81%
-Speed limit (50km/h): 0.19%
-Road work: 0.00%
-Slippery road: 0.00%
-Right-of-way at the next intersection: 0.00%
+Keep right: 60.06%
+Speed limit (50km/h): 39.64%
+Speed limit (30km/h): 0.27%
+Roundabout mandatory: 0.03%
+Turn right ahead: 0.00%
 
 image2.png:
 No entry: 100.00%
+Traffic signals: 0.00%
+End of all speed and passing limits: 0.00%
 Stop: 0.00%
 Right-of-way at the next intersection: 0.00%
-Speed limit (60km/h): 0.00%
-Speed limit (30km/h): 0.00%
 
 image3.jpg:
 Turn left ahead: 100.00%
@@ -170,19 +170,19 @@ Speed limit (50km/h): 0.00%
 Speed limit (60km/h): 0.00%
 
 image4.png:
-Speed limit (30km/h): 100.00%
-Speed limit (50km/h): 0.00%
+Speed limit (30km/h): 98.59%
+Speed limit (50km/h): 1.41%
 Speed limit (80km/h): 0.00%
 Speed limit (70km/h): 0.00%
-Wild animals crossing: 0.00%
+Speed limit (100km/h): 0.00%
 
 image5.png:
-Stop: 65.04%
-No entry: 34.84%
-Bicycles crossing: 0.11%
-Double curve: 0.00%
+Stop: 70.57%
+Bicycles crossing: 29.43%
+No entry: 0.00%
 Road work: 0.00%
+Speed limit (80km/h): 0.00%
 
-
+This project was made possible with help of [Udacity's delfdriving car engineer nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) and very detailed explanaition by [Vivek Sharma](https://github.com/vivekmsit/CarND-Traffic-Sign-Classifier-Project)
 
 
