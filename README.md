@@ -99,9 +99,9 @@ Number of EPOCHs required for training: I am storing last three values of valida
 
 My final model results were:
 
-* training set accuracy of 0.991
-* validation set accuracy of 0.964
-* test set accuracy of 0.897
+* training set accuracy of 0.984
+* validation set accuracy of 0.958
+* test set accuracy of 0.877
 
 
 ### Test a Model on New Images
