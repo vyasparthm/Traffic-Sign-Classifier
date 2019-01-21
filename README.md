@@ -16,8 +16,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[visualization]: ./output_img/dataset_visualization.png "Visualization"
-[training_samples]: ./output_img/training_images.png "Training Samples"
+[dataset_visualization]: ./output_img/dataset_visualization.png "Visualization"
+[training_images]: ./output_img/training_images.png "Training Samples"
 [image4]: ./test_img/image1.png "Traffic Sign 1"
 [image5]: ./test_img/image2.png "Traffic Sign 2"
 [image6]: ./test_img/image3.png "Traffic Sign 3"
@@ -42,7 +42,7 @@ I used the pandas library to calculate summary statistics of the traffic signs d
 
 Here is an exploratory visualization of the data set. It is a bar chart showing count for each traffic sign.
 
-![alt text][dataset_visualization]
+![alt text][visualization]
 
 Below are the samples images from training data set for each class:
 
