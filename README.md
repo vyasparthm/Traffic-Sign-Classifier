@@ -42,7 +42,7 @@ I used the pandas library to calculate summary statistics of the traffic signs d
 
 Here is an exploratory visualization of the data set. It is a bar chart showing count for each traffic sign.
 
-![alt text][visualization]
+![alt text][dataset_visualization]
 
 Below are the samples images from training data set for each class:
 
