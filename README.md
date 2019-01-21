@@ -183,6 +183,6 @@ No entry: 0.00%
 Road work: 0.00%
 Speed limit (80km/h): 0.00%
 
-This project was made possible with help of [Udacity's delfdriving car engineer nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) and very detailed explanaition by [Vivek Sharma](https://github.com/vivekmsit/CarND-Traffic-Sign-Classifier-Project)
+This project was made possible with help of [Udacity's delfdriving car engineer nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) and very detailed explaination by [Vivek Sharma](https://github.com/vivekmsit/CarND-Traffic-Sign-Classifier-Project)
 
 
